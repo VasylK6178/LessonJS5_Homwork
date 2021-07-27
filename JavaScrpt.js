@@ -47,6 +47,14 @@ console.log(getID.classList)
 // -- отримати всі елементи з класом fc_rules. визначити їм 2 події "клік",
 // одна вивдоить текст елементу, інша довільний текст
 
+const getfcrules = document.getElementsByClassName('fc_rules')
+for (let getfcrul of getfcrules) {
+    getfcrul.onclick = function () {
+        console.log(getfcrul)
+        console.log('Правила бойцовского клуба')
+    }
+}
+
 
 
 // -- поміняти колір тексту у всіх елементів fc_rules на червоний
